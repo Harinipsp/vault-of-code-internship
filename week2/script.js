@@ -32,7 +32,7 @@ document.getElementById("next").addEventListener("click", function() {
     steps[currentStep].classList.add("active-step");
     progress.style.width = (100 / steps.length) * (currentStep + 1) + "%";
   } else {
-    alert("🎉 Recipe Completed! Enjoy your Chocolate Cake!");
+    alert("Recipe Completed! Enjoy your Chocolate Cake!");
     this.disabled = true;
   }
 });
