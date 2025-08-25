@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in - Video Editing Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-play-circle"></i>
+                <span>Editkaro.in</span>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn" id="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Transform Your Videos Into Masterpieces</h1>
+            <p>Professional video editing services for content creators, businesses, and brands</p>
+            <a href="#portfolio" class="btn">View Our Work</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="categories" id="portfolio">
+        <div class="section-title">
+            <h2>Our Portfolio</h2>
+            <p>Explore our diverse range of video editing styles and techniques</p>
+        </div>
+
+        <div class="category-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="short-form">Short Form</button>
+            <button class="filter-btn" data-filter="long-form">Long Form</button>
+            <button class="filter-btn" data-filter="gaming">Gaming Videos</button>
+            <button class="filter-btn" data-filter="ads">eCommerce Ads</button>
+            <button class="filter-btn" data-filter="documentary">Documentary</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item" data-category="short-form">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Short Form Video" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Instagram Reel</h3>
+                    <p>Fast-paced editing with trending effects</p>
+                </div>
+                <div class="play-btn" data-video="https://www.youtube.com/embed/jNQXAC9IVRw">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item" data-category="long-form">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXRFjjKDbheKbWuhajoJbfmjWjXe3Eaw_igA&s" alt="Long Form Video" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>YouTube Documentary</h3>
+                    <p>30-minute documentary with cinematic visuals</p>
+                </div>
+                <div class="play-btn" data-video="https://www.youtube.com/embed/jNQXAC9IVRw">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item" data-category="gaming">
+                <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Gaming Video" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Gaming Montage</h3>
+                    <p>Action-packed gameplay highlights</p>
+                </div>
+                <div class="play-btn" data-video="https://www.youtube.com/embed/jNQXAC9IVRw">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-item" data-category="ads">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="eCommerce Ad" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Product Advertisement</h3>
+                    <p>Engaging ad for eCommerce brand</p>
+                </div>
+                <div class="play-btn" data-video="https://www.youtube.com/embed/jNQXAC9IVRw">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 5 -->
+            <div class="portfolio-item" data-category="documentary">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Documentary Style" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Travel Documentary</h3>
+                    <p>Cinematic storytelling with beautiful visuals</p>
+                </div>
+                <div class="play-btn" data-video="https://www.youtube.com/embed/jNQXAC9IVRw">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 6 -->
+            <div class="portfolio-item" data-category="short-form">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_QxuzYh8HCDg89ORPoVQZhY96skHJJpigrA&s" alt="Short Form Video" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>TikTok Video</h3>
+                    <p>Viral-style editing with text animations</p>
+                </div>
+                <div class="play-btn" data-video="https://www.youtube.com/embed/jNQXAC9IVRw">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>About Editkaro.in</h2>
+            <p>Learn about our mission, values, and what makes us different</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <h2>We Bring Your Vision to Life</h2>
+                <p>Editkaro.in was founded with a simple mission: to help content creators and businesses tell their stories through powerful video editing. We combine technical expertise with creative vision to produce videos that engage, inspire, and convert.</p>
+                <p>Our team of experienced editors specializes in various styles and formats, from short-form social media content to long-form documentaries and commercial advertisements.</p>
+                
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>500+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-users"></i>
+                        <h3>120+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-award"></i>
+                        <h3>15+</h3>
+                        <p>Industry Awards</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Video Editing Setup">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-title">
+            <h2>Client Testimonials</h2>
+            <p>What our clients say about working with us</p>
+        </div>
+
+        <div class="testimonial-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide active">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client" class="testimonial-img">
+                <p class="testimonial-text">"Editkaro.in transformed my YouTube channel with their incredible editing skills. My subscribers have increased by 200% since I started working with them!"</p>
+                <p class="testimonial-author">- Priya Sharma, Lifestyle YouTuber</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="testimonial-img">
+                <p class="testimonial-text">"The gaming montages created by Editkaro.in are absolutely mind-blowing. They perfectly capture the most exciting moments and make them even more epic."</p>
+                <p class="testimonial-author">- Raj Mehta, Gaming Content Creator</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="testimonial-img">
+                <p class="testimonial-text">"As an eCommerce business, our product videos needed to be professional and engaging. Editkaro.in delivered exactly what we needed, and our conversion rates have improved significantly."</p>
+                <p class="testimonial-author">- Anjali Patel, Founder of StyleHub</p>
+            </div>
+
+            <div class="testimonial-nav">
+                <div class="testimonial-dot active" data-slide="0"></div>
+                <div class="testimonial-dot" data-slide="1"></div>
+                <div class="testimonial-dot" data-slide="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Mumbai, India</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@editkaro.in</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Working Hours</h3>
+                        <p>Mon - Sat: 10AM - 7PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" placeholder="How can we help you?" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <i class="fas fa-play-circle"></i>
+                <span>Editkaro.in</span>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <p class="copyright">© 2023 Editkaro.in. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="video-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">
+                <i class="fas fa-times"></i>
+            </span>
+            <div class="video-container">
+                <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navMenu.classList.toggle('show');
+            });
+
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    
+            
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+            const testimonialDots = document.querySelectorAll('.testimonial-dot');
+            let currentSlide = 0;
+            
+            function showSlide(n) {
+                testimonialSlides.forEach(slide => slide.classList.remove('active'));
+                testimonialDots.forEach(dot => dot.classList.remove('active'));
+                
+                testimonialSlides[n].classList.add('active');
+                testimonialDots[n].classList.add('active');
+                currentSlide = n;
+            }
+            
+            testimonialDots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    const slideIndex = parseInt(this.getAttribute('data-slide'));
+                    showSlide(slideIndex);
+                });
+            });
+            
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % testimonialSlides.length;
+                showSlide(currentSlide);
+            }, 5000);
+            const playButtons = document.querySelectorAll('.play-btn');
+            const videoModal = document.getElementById('video-modal');
+            const modalVideo = document.getElementById('modal-video');
+            const closeModal = document.getElementById('close-modal');
+            
+            playButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const videoURL = this.getAttribute('data-video');
+                    modalVideo.setAttribute('src', videoURL);
+                    videoModal.classList.add('show');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            closeModal.addEventListener('click', function() {
+                videoModal.classList.remove('show');
+                modalVideo.setAttribute('src', '');
+                document.body.style.overflow = 'auto';
+            });
+            
+            videoModal.addEventListener('click', function(e) {
+                if (e.target === videoModal) {
+                    videoModal.classList.remove('show');
+                    modalVideo.setAttribute('src', '');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        navMenu.classList.remove('show');
+                        
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            const contactForm = document.querySelector('.contact-form');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+              
+                const nameInput = document.getElementById('name');
+                const emailInput = document.getElementById('email');
+                const messageInput = document.getElementById('message');
+                
+                if (nameInput.value.trim() === '') {
+                    alert('Please enter your name');
+                    nameInput.focus();
+                    return;
+                }
+                
+                if (emailInput.value.trim() === '' || !emailInput.value.includes('@')) {
+                    alert('Please enter a valid email address');
+                    emailInput.focus();
+                    return;
+                }
+                
+                if (messageInput.value.trim() === '') {
+                    alert('Please enter your message');
+                    messageInput.focus();
+                    return;
+                }
+              
+                alert('Thank you for your message! We will get back to you soon.');
+                contactForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
